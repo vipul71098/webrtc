@@ -231,9 +231,7 @@ declineBtn.addEventListener("click", function () {
 
 function gotRemoteStream(event) {
   console.log('got remote stream');
-  var tt=new RTCPeerConnection().getStats();
-
-  console.log("tt,",tt)
+  
   remoteVideo.srcObject = event.streams[0];
 }
 
